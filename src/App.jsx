@@ -17,17 +17,19 @@ function App() {
 <body>
 <div className="container">
   <div className="row-1">
+  <div className="block" id='scroll'>
+      <h1>Welkom</h1>
+      <p>Welkom op dit super te gekke crypto dashboard </p>
+      <p>Gemaakt door Florian Hegeman</p>
+    </div>
     <Table className="block"></Table>
     <div className="block  block-pie">
       <BasicPie className="block"></BasicPie>
     </div>
-    <div className="block" id='scroll'>
-      <Search></Search>
-    </div>
   </div>
   <div className="row-2">
     <div className="block">
-    <CheckedCoins />
+      <Search></Search>
     </div>
     <div className="block">Blok 5</div>
   </div>

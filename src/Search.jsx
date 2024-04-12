@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 import './search.css';
-import CoinNames from './CheckedCoins'; // Importeer het nieuwe component
+import CoinNames from './CheckedCoins';
 
 const Search = () => {
   const [coins, setCoins] = useState([]);
@@ -40,25 +40,31 @@ const Search = () => {
   );
 
   return (
-    <div>
-      <header>
-        <input type="text" placeholder="Search" onChange={handleSearch} />
-        <FontAwesomeIcon icon={faMagnifyingGlass} />
-      </header>
-      <ul>
-        {filteredCoins.map((coin) => (
-          <li key={coin.id}>
-            {coin.name}
-            <input
-              type="checkbox"
-              checked={checkedCoins[coin.id] || false}
-              onChange={() => handleCheck(coin.id)}
-            />
-          </li>
-        ))}
-      </ul>
-      <h2>Checked Coins</h2>
-      <CoinNames coins={checkedFilteredCoins} />
+    <div className="coins-container">
+      <div className="coins-list">
+        <header>
+          <input type="text" placeholder="Search" onChange={handleSearch} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
+        </header>
+        <ul>
+          {filteredCoins.map((coin) => (
+            <li key={coin.id}>
+              {coin.name}
+              <input
+                type="checkbox"
+                checked={checkedCoins[coin.id] || false}
+                onChange={() => handleCheck(coin.id)}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="favorites-container">
+        <header>
+          <h2>Favorites</h2>
+        </header>
+        <CoinNames coins={checkedFilteredCoins} />
+      </div>
     </div>
   );
 };
