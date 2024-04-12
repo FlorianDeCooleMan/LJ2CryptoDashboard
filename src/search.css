@@ -1,0 +1,12 @@
+li{
+    border-top: 1px solid #ccc;
+}
+header{
+    background-color: rgb(12, 163, 163);
+    font-size: 1rem;
+}
+input{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
