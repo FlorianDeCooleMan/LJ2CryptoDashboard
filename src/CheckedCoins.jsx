@@ -8,7 +8,7 @@ console.log("hallo:", coins);
     <>
     <ul>
       {coins && coins.map((coin) => (
-        <li>{coin.name} ${parseFloat(coin.priceUsd).toFixed(2)}</li>
+        <li>{coin.name} ${parseFloat(coin.priceUsd).toFixed(2)} | {parseFloat(coin.changePercent24Hr).toFixed(2)}</li>
       ))}
     </ul>
     </>

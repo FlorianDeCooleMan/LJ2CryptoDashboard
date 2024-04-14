@@ -20,9 +20,9 @@ function App() {
 <div className="container">
   <div className="row-1">
   <div className="block" id='scroll'>
-      <h1>Welkom</h1>
-      <p>Welkom op dit super te gekke crypto dashboard </p>
-      <p>Gemaakt door FlorianDeCooleMan</p>
+      <h1>Welcome</h1>
+      <p>Welcome to the Florian® crypto dashboard! Happy trading! 📈💰</p>
+      <p>Made by Florian</p>
     </div>
     <Table className="block" id='scroll'></Table>
     <div className="block  block-pie">

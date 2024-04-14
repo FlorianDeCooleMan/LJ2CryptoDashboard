@@ -100,8 +100,12 @@ td, th {
   box-sizing: border-box;
   border-radius: 5px;
   overflow: auto;
-
 }
+
+.block h1{
+  margin: 40px
+}
+
 .block-pie{
   display: flex;
   justify-content: center;
