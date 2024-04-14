@@ -8,6 +8,8 @@ import BasicPie from './PieChart'
 import Search from './Search'
 import { Route, Routes } from 'react-router-dom'
 import CheckedCoins from './CheckedCoins'
+import { LineChart } from '@mui/x-charts'
+import BitcoinLineChart from './LineChart'
 
 function App() {
 
@@ -20,18 +22,21 @@ function App() {
   <div className="block" id='scroll'>
       <h1>Welkom</h1>
       <p>Welkom op dit super te gekke crypto dashboard </p>
-      <p>Gemaakt door Florian Hegeman</p>
+      <p>Gemaakt door FlorianDeCooleMan</p>
     </div>
-    <Table className="block"></Table>
+    <Table className="block" id='scroll'></Table>
     <div className="block  block-pie">
       <BasicPie className="block"></BasicPie>
     </div>
   </div>
-  <div className="row-2">
-    <div className="block">
+  <div className="row-2" >
+    <div className="block" id='scroll'>
       <Search></Search>
     </div>
-    <div className="block">Blok 5</div>
+    <div className="block">
+      <h3>Bitcoin YTD (USD)</h3>
+      <BitcoinLineChart></BitcoinLineChart>
+    </div>
   </div>
 </div>
 </body>
