@@ -2,7 +2,7 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-to see this website: open the repository in VSC and type in 'nmp run dev' in your terminal, than click on the link provided
+to see this website: open the repository in VSC and type in 'npm run dev' in your terminal, than click on the link provided
 
 Currently, two official plugins are available:
 
